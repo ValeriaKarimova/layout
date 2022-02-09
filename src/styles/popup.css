@@ -1,0 +1,59 @@
+.navigation-menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 390px;
+  height: 1080px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.navigation-menu__item {
+  cursor: pointer;
+  font-size: 30px;
+  color: #fff;
+  list-style: none;
+  margin-top: 32px;
+}
+
+.navigation-menu__item:hover {
+  color: rgba(154, 203, 248, 1);
+}
+
+.navigation-menu__list {
+  position: absolute;
+  top: 132px;
+  left: 42px;
+}
+
+.to-main::before,
+.to-textbook::before,
+.to-games::before,
+.to-statistics::before,
+.to-team::before {
+  margin-right: 15px;
+}
+
+.to-audio,
+.to-sprint {
+  margin-left: 44px;
+}
+
+.to-main::before {
+  content: url(../RS-Lang-assets/svg-icon/menu/home.svg);
+}
+
+.to-textbook::before {
+  content: url(../RS-Lang-assets/svg-icon/menu/textbook.svg);
+}
+
+.to-games::before {
+  content: url(../RS-Lang-assets/svg-icon/menu/games.svg);
+}
+
+.to-statistics::before {
+  content: url(../RS-Lang-assets/svg-icon/menu/statistics.svg);
+}
+
+.to-team::before {
+  content: url(../RS-Lang-assets/svg-icon/menu/team.svg);
+}
