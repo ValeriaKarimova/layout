@@ -16,6 +16,7 @@
   height: 90%;
   margin: 0 auto;
   position: relative;
+  display: flex;
 }
 
 .decoration,

@@ -1,7 +1,21 @@
 .wrapper {
-    height: 1080px;;
-    background: #F6F9FA;
-    background-image: url(../RS-Lang-assets/bg/bg-main.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
+  height: 1080px;
+  background: #f6f9fa;
+  background-image: url(../RS-Lang-assets/bg/bg-main.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+button,
+span {
+  font-family: "Roboto";
 }
