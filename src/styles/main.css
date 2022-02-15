@@ -13,7 +13,7 @@
 
 .menu {
   width: 90%;
-  height: 90%;
+  height: calc(100vh - 200px);
   margin: 0 auto;
   position: relative;
   display: flex;

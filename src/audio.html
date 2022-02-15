@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/footer.css" />
     <link rel="stylesheet" href="styles/audiocall.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,7 +29,7 @@
         </div>
       </header>
       <main class="menu">
-        <!-- <div class="audio-game">
+        <div class="audio-game">
           <h1 class="audio-game__name">Аудиовызов</h1>
           <p class="audio-game__description">
             Данная игра поможет улучшить ваше восприятие речи на слух
@@ -43,72 +44,122 @@
             <li class="audio-game__level-button" data-num="6">6</li>
           </ul>
           <button class="audio-game__start">Начать</button>
-        </div> -->
+        </div>
 
-        <!-- <div class="audio-game__level">
+        <div class="audio-game__level invisible">
           <h4 class="audio-game__level-name">Аудиовызов</h4>
           <div class="audio-game__sound-button">
             <span class="audio-game__sound-button__icon"></span>
           </div>
           <ul class="audio-game__level-options">
-            <li class="level-option">1 завтрак</li>
-            <li class="level-option">2 вино</li>
-            <li class="level-option">3 наслаждаться</li>
-            <li class="level-option">4 путешествовать</li>
-            <li class="level-option">5 лодка</li>
+            <li class="level-option">завтрак</li>
+            <li class="level-option">вино</li>
+            <li class="level-option">наслаждаться</li>
+            <li class="level-option">путешествовать</li>
+            <li class="level-option">лодка</li>
           </ul>
-          <button class="audio-game__button">не знаю</button>
-        </div> -->
+          <button class="audio-game__button skip-button">не знаю</button>
+        </div>
 
-        <!-- <div class="audio-game__level audio-game__answer">
+        <div class="audio-game__level audio-game__answer invisible">
           <h4 class="audio-game__level-name">Аудиовызов</h4>
           <figure>
-            <img class="audio-game__answer-image" src="/RS-Lang-assets/svg-icon/audio-call/word-img.png" alt="">
-            <figcaption class="audio-game__answer-image-name">wine [waɪn]</figcaption>
+            <img
+              class="audio-game__answer-image"
+              src="RS-Lang-assets/audio-call-img.png"
+              alt=""
+            />
+            <figcaption class="audio-game__answer-image-name">
+              wine [waɪn]
+            </figcaption>
           </figure>
           <ul class="audio-game__level-options">
-            <li class="level-option">1 завтрак</li>
-            <li class="level-option correct-answer">2 вино</li>
-            <li class="level-option">3 наслаждаться</li>
-            <li class="level-option">4 путешествовать</li>
-            <li class="level-option">5 лодка</li>
+            <li class="level-option">завтрак</li>
+            <li class="level-option correct-answer">вино</li>
+            <li class="level-option">наслаждаться</li>
+            <li class="level-option">путешествовать</li>
+            <li class="level-option">лодка</li>
           </ul>
-          <button class="audio-game__button">дальше</button>
-        </div> -->
+          <button class="audio-game__button next-btn">дальше</button>
+        </div>
 
-        <div class="audio-game__level audio-game__results">
+        <div class="audio-game__level audio-game__results invisible">
           <h4 class="audio-game__level-name">Аудиовызов</h4>
-              <div class="audio-game__results-container">
-                <h5 class="audio-game__results-name">Результаты</h5>
-                <ul class="audio-game__results__wrong">
-                  <h6 class="audio-game__results__wrong-name">Heправильные ответы</h6>
-                  <li class="result-word"><strong class="result-word__english">week</strong> - неделя</li>
-                  <li class="result-word"><strong class="result-word__english">week</strong> - неделя</li>
-                  <li class="result-word"><strong class="result-word__english">week</strong> - неделя</li>
-                  <li class="result-word"><strong class="result-word__english">week</strong> - неделя</li>
-                  <li class="result-word"><strong class="result-word__english">week</strong> - неделя</li>
-                  <li class="result-word"><strong class="result-word__english">week</strong> - неделя</li>
-                  <li class="result-word"><strong class="result-word__english">week</strong> - неделя</li>
-                  <li class="result-word"><strong class="result-word__english">week</strong> - неделя</li>
-                  <li class="result-word"><strong class="result-word__english">week</strong> - неделя</li>
-                  <li class="result-word"><strong class="result-word__english">week</strong> - неделя</li>
-                </ul>
-                <ul class="audio-game__results__correct">
-                  <h6 class="audio-game__results__correct-name">Правильные ответы</h6>
-                  <li class="result-word"><strong class="result-word__english">week</strong> - неделя</li>
-                  <li class="result-word"><strong class="result-word__english">week</strong> - неделя</li>
-                  <li class="result-word"><strong class="result-word__english">week</strong> - неделя</li>
-                  <li class="result-word"><strong class="result-word__english">week</strong> - неделя</li>
-                  <li class="result-word"><strong class="result-word__english">week</strong> - неделя</li>
-                  <li class="result-word"><strong class="result-word__english">week</strong> - неделя</li>
-                  <li class="result-word"><strong class="result-word__english">week</strong> - неделя</li>
-                  <li class="result-word"><strong class="result-word__english">week</strong> - неделя</li>
-                  <li class="result-word"><strong class="result-word__english">week</strong> - неделя</li>
-                  <li class="result-word"><strong class="result-word__english">week</strong> - неделя</li>
-                </ul>
-                <button class="audio-game__button">сыграть еще</button>
-                <button class="audio-game__button">учебник</button>
-              </div>
+          <div class="audio-game__results-container">
+            <h5 class="audio-game__results-name">Результаты</h5>
+            <ul class="audio-game__results__wrong">
+              <h6 class="audio-game__results__wrong-name">
+                Heправильные ответы<span class="wrong-answer__count">10</span>
+              </h6>
+              <li class="result-word">
+                <strong class="result-word__english">week</strong> - неделя
+              </li>
+              <li class="result-word">
+                <strong class="result-word__english">week</strong> - неделя
+              </li>
+              <li class="result-word">
+                <strong class="result-word__english">week</strong> - неделя
+              </li>
+              <li class="result-word">
+                <strong class="result-word__english">week</strong> - неделя
+              </li>
+              <li class="result-word">
+                <strong class="result-word__english">week</strong> - неделя
+              </li>
+              <li class="result-word">
+                <strong class="result-word__english">week</strong> - неделя
+              </li>
+              <li class="result-word">
+                <strong class="result-word__english">week</strong> - неделя
+              </li>
+              <li class="result-word">
+                <strong class="result-word__english">week</strong> - неделя
+              </li>
+              <li class="result-word">
+                <strong class="result-word__english">week</strong> - неделя
+              </li>
+              <li class="result-word">
+                <strong class="result-word__english">week</strong> - неделя
+              </li>
+            </ul>
+            <ul class="audio-game__results__correct">
+              <h6 class="audio-game__results__correct-name">
+                Правильные ответы<span class="correct-answer__count">10</span>
+              </h6>
+              <li class="result-word">
+                <strong class="result-word__english">week</strong> - неделя
+              </li>
+              <li class="result-word">
+                <strong class="result-word__english">week</strong> - неделя
+              </li>
+              <li class="result-word">
+                <strong class="result-word__english">week</strong> - неделя
+              </li>
+              <li class="result-word">
+                <strong class="result-word__english">week</strong> - неделя
+              </li>
+              <li class="result-word">
+                <strong class="result-word__english">week</strong> - неделя
+              </li>
+              <li class="result-word">
+                <strong class="result-word__english">week</strong> - неделя
+              </li>
+              <li class="result-word">
+                <strong class="result-word__english">week</strong> - неделя
+              </li>
+              <li class="result-word">
+                <strong class="result-word__english">week</strong> - неделя
+              </li>
+              <li class="result-word">
+                <strong class="result-word__english">week</strong> - неделя
+              </li>
+              <li class="result-word">
+                <strong class="result-word__english">week</strong> - неделя
+              </li>
+            </ul>
+            <button class="audio-game__button">сыграть еще</button>
+            <button class="audio-game__button">учебник</button>
+          </div>
         </div>
       </main>
 
@@ -125,6 +176,29 @@
         </div>
       </footer>
     </div>
-    <script type="text/javascript"></script>
+    <script type="text/javascript">
+      const audioGame = document.querySelector('.audio-game');
+      const audioLevel = document.querySelector('.audio-game__level');
+      const audioAnswer = document.querySelector('.audio-game__answer');
+      const audioResults = document.querySelector('.audio-game__results');
+      const startBtn = document
+        .querySelector('.audio-game__start')
+        .addEventListener('click', () => {
+          audioLevel.classList.remove('invisible');
+          audioGame.classList.add('invisible');
+        });
+      const skipBtn = document
+        .querySelector('.skip-button')
+        .addEventListener('click', () => {
+          audioLevel.classList.add('invisible');
+          audioAnswer.classList.remove('invisible');
+        });
+      const nextBtn = document
+        .querySelector('.next-btn')
+        .addEventListener('click', () => {
+          audioAnswer.classList.add('invisible');
+          audioResults.classList.remove('invisible');
+        });
+    </script>
   </body>
 </html>
